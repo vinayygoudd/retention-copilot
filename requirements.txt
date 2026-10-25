@@ -1,0 +1,33 @@
+# Core Data Science & Numerical Computing
+numpy>=1.26.0
+pandas>=2.1.0
+scipy>=1.11.0
+statsmodels>=0.14.0
+pyarrow>=14.0.0
+PyYAML>=6.0
+
+# Machine Learning, Explainability & Uplift
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+shap>=0.44.0
+
+# NLP & Embeddings
+sentence-transformers>=2.3.0
+
+# Distributed Data Engineering & Data Warehouse
+pyspark>=3.5.0
+snowflake-connector-python[pandas]>=3.6.0
+
+# Interactive Dashboard & Visualization
+streamlit>=1.31.0
+plotly>=5.18.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# GenAI Action Briefs & Environment Management
+openai>=1.12.0
+python-dotenv>=1.0.0
+
+# Automated Testing & Notebooks
+pytest>=8.0.0
+nbformat>=5.9.0

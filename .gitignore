@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets (NEVER COMMIT)
+.env
+.env.local
+*.pem
+*.key
+
+# PySpark / Java artifacts
+metastore_db/
+spark-warehouse/
+derby.log
+
+# Large local data & warehouse artifacts (keep lightweight samples or regenerate via scripts)
+data/raw/*.parquet
+data/processed/*.parquet
+data/warehouse/*.db
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Pytest / Coverage cache
+.pytest_cache/
+.coverage
+htmlcov/

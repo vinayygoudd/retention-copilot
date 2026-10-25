@@ -1,0 +1,67 @@
+{
+  "pehe_rmse_vs_ground_truth": 0.0587,
+  "pearson_corr_with_ground_truth": 0.6371,
+  "spearman_rank_corr_with_ground_truth": 0.6738,
+  "auuc_expected_saves": {
+    "Uplift_T_Learner": 58.046,
+    "Churn_Risk_Targeting": 49.021,
+    "Random_Targeting": 44.642,
+    "Oracle_True_Uplift": 64.587
+  },
+  "overall_rct_ate": {
+    "n_treated": 1989,
+    "n_control": 1012,
+    "retention_rate_treated": 0.5973,
+    "retention_rate_control": 0.5138,
+    "empirical_uplift": 0.0835,
+    "se": 0.0192,
+    "ci_95_lower": 0.0459,
+    "ci_95_upper": 0.121,
+    "z_stat": 4.351,
+    "p_value": 1.352e-05
+  },
+  "assumptions_and_limitations": {
+    "randomization_and_ignorability": "Conditional Ignorability (Unconfoundedness): Treatment assignment T is randomized independently of potential outcomes (Y(1), Y(0)) conditional on pre-cutoff covariates X.",
+    "sutva": "Stable Unit Treatment Value Assumption (SUTVA): One customer's retention offer does not spill over or alter another customer's churn behavior, and each campaign tier has a well-defined treatment version.",
+    "positivity_overlap": "Positivity (Common Support): Every customer segment has a strictly positive probability 0 < P(T=1|X) < 1 of being assigned to either treatment or control.",
+    "t_learner_limitations": "T-Learner Statistical Limitations: Because the T-Learner fits two separate models (mu_0 and mu_1) independently, regularization bias and estimation noise in each base model can compound when taking their difference (tau = mu_0 - mu_1). High-variance regions require sample-size awareness and confidence interval reporting."
+  },
+  "campaign_type_rct_results": {
+    "discount_15pct": {
+      "n_treated": 4492,
+      "n_control": 6746,
+      "retention_rate_treated": 0.5882,
+      "retention_rate_control": 0.5132,
+      "empirical_uplift": 0.075,
+      "se": 0.0095,
+      "ci_95_lower": 0.0563,
+      "ci_95_upper": 0.0937,
+      "z_stat": 7.86,
+      "p_value": 3.775e-15
+    },
+    "priority_support": {
+      "n_treated": 4397,
+      "n_control": 6746,
+      "retention_rate_treated": 0.6093,
+      "retention_rate_control": 0.5132,
+      "empirical_uplift": 0.0961,
+      "se": 0.0095,
+      "ci_95_lower": 0.0774,
+      "ci_95_upper": 0.1148,
+      "z_stat": 10.063,
+      "p_value": 0.0
+    },
+    "executive_bundle": {
+      "n_treated": 4365,
+      "n_control": 6746,
+      "retention_rate_treated": 0.5943,
+      "retention_rate_control": 0.5132,
+      "empirical_uplift": 0.0811,
+      "se": 0.0096,
+      "ci_95_lower": 0.0623,
+      "ci_95_upper": 0.0999,
+      "z_stat": 8.441,
+      "p_value": 0.0
+    }
+  }
+}

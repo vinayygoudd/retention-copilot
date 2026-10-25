@@ -1,0 +1,72 @@
+{
+  "default_budget": 75000.0,
+  "total_eligible_customers": 11173,
+  "selected_customers_under_budget": 907,
+  "policy_comparison_at_default_budget": [
+    {
+      "policy_name": "1. Profit-Optimized Uplift + Offer Matching (Recommended)",
+      "budget_limit": 75000.0,
+      "customers_targeted": 907,
+      "total_intervention_spend": 74958.0,
+      "expected_incremental_saves": 116.22,
+      "ground_truth_incremental_saves": 79.59,
+      "expected_incremental_revenue": 1117704.06,
+      "expected_net_incremental_profit": 1042746.06,
+      "ground_truth_net_incremental_profit": 731933.69,
+      "expected_roi_pct": 1391.11,
+      "ground_truth_roi_pct": 976.46
+    },
+    {
+      "policy_name": "2. Pure Uplift Targeting (Top Incremental Retention Prob)",
+      "budget_limit": 75000.0,
+      "customers_targeted": 1666,
+      "total_intervention_spend": 74970.0,
+      "expected_incremental_saves": 316.81,
+      "ground_truth_incremental_saves": 273.74,
+      "expected_incremental_revenue": 354612.1,
+      "expected_net_incremental_profit": 279642.1,
+      "ground_truth_net_incremental_profit": 205882.76,
+      "expected_roi_pct": 373.01,
+      "ground_truth_roi_pct": 274.62
+    },
+    {
+      "policy_name": "3. Naive Churn-Risk Targeting (Top Churn Probability)",
+      "budget_limit": 75000.0,
+      "customers_targeted": 1666,
+      "total_intervention_spend": 74970.0,
+      "expected_incremental_saves": 54.38,
+      "ground_truth_incremental_saves": 43.67,
+      "expected_incremental_revenue": 310081.14,
+      "expected_net_incremental_profit": 235111.14,
+      "ground_truth_net_incremental_profit": 176236.31,
+      "expected_roi_pct": 313.61,
+      "ground_truth_roi_pct": 235.08
+    },
+    {
+      "policy_name": "4. High-LTV Account Targeting (Top Customer Value)",
+      "budget_limit": 75000.0,
+      "customers_targeted": 1666,
+      "total_intervention_spend": 74970.0,
+      "expected_incremental_saves": 72.28,
+      "ground_truth_incremental_saves": 71.94,
+      "expected_incremental_revenue": 926945.44,
+      "expected_net_incremental_profit": 851975.44,
+      "ground_truth_net_incremental_profit": 840120.43,
+      "expected_roi_pct": 1136.42,
+      "ground_truth_roi_pct": 1120.61
+    },
+    {
+      "policy_name": "5. Random Targeting (Untargeted Campaign Blast)",
+      "budget_limit": 75000.0,
+      "customers_targeted": 1666,
+      "total_intervention_spend": 74970.0,
+      "expected_incremental_saves": 130.92,
+      "ground_truth_incremental_saves": 153.3,
+      "expected_incremental_revenue": 223423.33,
+      "expected_net_incremental_profit": 148453.33,
+      "ground_truth_net_incremental_profit": 158363.27,
+      "expected_roi_pct": 198.02,
+      "ground_truth_roi_pct": 211.24
+    }
+  ]
+}

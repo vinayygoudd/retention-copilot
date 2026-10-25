@@ -1,0 +1,352 @@
+{
+  "causal_disclaimer": "Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness.",
+  "top_15_global_features": [
+    {
+      "feature": "is_month_to_month",
+      "business_name": "Month-to-Month Contract",
+      "mean_abs_shap": 0.584,
+      "relative_importance_pct": 19.6,
+      "feature_shap_correlation": 0.9443,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "monthly_charges",
+      "business_name": "Monthly Recurring Charge ($)",
+      "mean_abs_shap": 0.28304,
+      "relative_importance_pct": 9.5,
+      "feature_shap_correlation": 0.8948,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "ticket_max_severity_90d",
+      "business_name": "Max Support Ticket Severity (1-5)",
+      "mean_abs_shap": 0.25046,
+      "relative_importance_pct": 8.41,
+      "feature_shap_correlation": 0.9712,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "tenure_months",
+      "business_name": "Account Tenure (Months)",
+      "mean_abs_shap": 0.22768,
+      "relative_importance_pct": 7.64,
+      "feature_shap_correlation": -0.9717,
+      "risk_direction": "Reduces Churn Risk (-)"
+    },
+    {
+      "feature": "ticket_count_90d",
+      "business_name": "Support Tickets Opened (Last 90 Days)",
+      "mean_abs_shap": 0.18676,
+      "relative_importance_pct": 6.27,
+      "feature_shap_correlation": 0.859,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "active_seats_ratio_m0",
+      "business_name": "Current Seat Utilization Ratio",
+      "mean_abs_shap": 0.17703,
+      "relative_importance_pct": 5.94,
+      "feature_shap_correlation": -0.9065,
+      "risk_direction": "Reduces Churn Risk (-)"
+    },
+    {
+      "feature": "is_two_year",
+      "business_name": "Two-Year Multi-Year Contract",
+      "mean_abs_shap": 0.1626,
+      "relative_importance_pct": 5.46,
+      "feature_shap_correlation": -0.9859,
+      "risk_direction": "Reduces Churn Risk (-)"
+    },
+    {
+      "feature": "ticket_mean_resolution_hours_90d",
+      "business_name": "Avg Ticket Resolution Wait (Hours)",
+      "mean_abs_shap": 0.12699,
+      "relative_importance_pct": 4.26,
+      "feature_shap_correlation": 0.8785,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "nlp_cluster_3_sim",
+      "business_name": "nlp_cluster_3_sim",
+      "mean_abs_shap": 0.11255,
+      "relative_importance_pct": 3.78,
+      "feature_shap_correlation": 0.8571,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "ticket_unresolved_count_90d",
+      "business_name": "Unresolved Support Tickets Count",
+      "mean_abs_shap": 0.11132,
+      "relative_importance_pct": 3.74,
+      "feature_shap_correlation": 0.9517,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "usage_drop_pct_m2_to_m0",
+      "business_name": "90-Day Usage Decline (%)",
+      "mean_abs_shap": 0.09805,
+      "relative_importance_pct": 3.29,
+      "feature_shap_correlation": 0.8255,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "late_payment_count_3m",
+      "business_name": "Late Payments (Last 3 Months)",
+      "mean_abs_shap": 0.096,
+      "relative_importance_pct": 3.22,
+      "feature_shap_correlation": 0.9437,
+      "risk_direction": "Increases Churn Risk (+)"
+    },
+    {
+      "feature": "ticket_min_csat_90d",
+      "business_name": "Minimum Support CSAT Score (1-5)",
+      "mean_abs_shap": 0.06996,
+      "relative_importance_pct": 2.35,
+      "feature_shap_correlation": -0.8038,
+      "risk_direction": "Reduces Churn Risk (-)"
+    },
+    {
+      "feature": "feature_adoption_m0",
+      "business_name": "Core Feature Adoption Index",
+      "mean_abs_shap": 0.05684,
+      "relative_importance_pct": 1.91,
+      "feature_shap_correlation": -0.8767,
+      "risk_direction": "Reduces Churn Risk (-)"
+    },
+    {
+      "feature": "api_calls_k_m0",
+      "business_name": "Monthly API Volume (Thousands)",
+      "mean_abs_shap": 0.04679,
+      "relative_importance_pct": 1.57,
+      "feature_shap_correlation": 0.521,
+      "risk_direction": "Increases Churn Risk (+)"
+    }
+  ],
+  "sample_customer_explanations": [
+    {
+      "customer_id": "CUST_000001",
+      "predicted_churn_prob": 0.134,
+      "churn_risk_tier": "Low Risk",
+      "base_log_odds": 0.0,
+      "top_drivers": [
+        {
+          "feature": "is_month_to_month",
+          "business_name": "Month-to-Month Contract",
+          "raw_value": 0.0,
+          "shap_log_odds": -0.8013,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "tenure_months",
+          "business_name": "Account Tenure (Months)",
+          "raw_value": 25.0,
+          "shap_log_odds": -0.3485,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "active_seats_ratio_m0",
+          "business_name": "Current Seat Utilization Ratio",
+          "raw_value": 0.9401,
+          "shap_log_odds": -0.2597,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "ticket_count_90d",
+          "business_name": "Support Tickets Opened (Last 90 Days)",
+          "raw_value": 1.0,
+          "shap_log_odds": -0.1528,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "ticket_max_severity_90d",
+          "business_name": "Max Support Ticket Severity (1-5)",
+          "raw_value": 3.0,
+          "shap_log_odds": 0.1207,
+          "direction": "Risk Enhancer (+)"
+        }
+      ],
+      "business_explanation": "Customer CUST_000001 has a predicted churn probability of 13.4% (Low Risk). Top predictive drivers: Month-to-Month Contract (0) decreases predicted churn log-odds by 0.80; Account Tenure (Months) (25) decreases predicted churn log-odds by 0.35; Current Seat Utilization Ratio (0.9401) decreases predicted churn log-odds by 0.26. Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness.",
+      "causal_disclaimer": "Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness."
+    },
+    {
+      "customer_id": "CUST_000002",
+      "predicted_churn_prob": 0.6188,
+      "churn_risk_tier": "High Risk",
+      "base_log_odds": 0.0,
+      "top_drivers": [
+        {
+          "feature": "is_month_to_month",
+          "business_name": "Month-to-Month Contract",
+          "raw_value": 1.0,
+          "shap_log_odds": 0.4504,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "ticket_count_90d",
+          "business_name": "Support Tickets Opened (Last 90 Days)",
+          "raw_value": 1.0,
+          "shap_log_odds": -0.1994,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "monthly_charges",
+          "business_name": "Monthly Recurring Charge ($)",
+          "raw_value": 149.55,
+          "shap_log_odds": -0.1803,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "ticket_max_severity_90d",
+          "business_name": "Max Support Ticket Severity (1-5)",
+          "raw_value": 3.0,
+          "shap_log_odds": 0.1746,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "ticket_unresolved_count_90d",
+          "business_name": "Unresolved Support Tickets Count",
+          "raw_value": 1.0,
+          "shap_log_odds": 0.1668,
+          "direction": "Risk Enhancer (+)"
+        }
+      ],
+      "business_explanation": "Customer CUST_000002 has a predicted churn probability of 61.9% (High Risk). Top predictive drivers: Month-to-Month Contract (1) increases predicted churn log-odds by 0.45; Support Tickets Opened (Last 90 Days) (1) decreases predicted churn log-odds by 0.20; Monthly Recurring Charge ($) (149.55) decreases predicted churn log-odds by 0.18. Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness.",
+      "causal_disclaimer": "Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness."
+    },
+    {
+      "customer_id": "CUST_000003",
+      "predicted_churn_prob": 0.3683,
+      "churn_risk_tier": "Medium Risk",
+      "base_log_odds": 0.0,
+      "top_drivers": [
+        {
+          "feature": "is_month_to_month",
+          "business_name": "Month-to-Month Contract",
+          "raw_value": 0.0,
+          "shap_log_odds": -1.1693,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "monthly_charges",
+          "business_name": "Monthly Recurring Charge ($)",
+          "raw_value": 1163.45,
+          "shap_log_odds": 0.5784,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "ticket_max_severity_90d",
+          "business_name": "Max Support Ticket Severity (1-5)",
+          "raw_value": 4.0,
+          "shap_log_odds": 0.193,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "ticket_count_90d",
+          "business_name": "Support Tickets Opened (Last 90 Days)",
+          "raw_value": 1.0,
+          "shap_log_odds": -0.1834,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "seats_licensed",
+          "business_name": "Licensed Seats Count",
+          "raw_value": 41.0,
+          "shap_log_odds": 0.1826,
+          "direction": "Risk Enhancer (+)"
+        }
+      ],
+      "business_explanation": "Customer CUST_000003 has a predicted churn probability of 36.8% (Medium Risk). Top predictive drivers: Month-to-Month Contract (0) decreases predicted churn log-odds by 1.17; Monthly Recurring Charge ($) (1163.45) increases predicted churn log-odds by 0.58; Max Support Ticket Severity (1-5) (4) increases predicted churn log-odds by 0.19. Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness.",
+      "causal_disclaimer": "Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness."
+    },
+    {
+      "customer_id": "CUST_000004",
+      "predicted_churn_prob": 0.2304,
+      "churn_risk_tier": "Low Risk",
+      "base_log_odds": 0.0,
+      "top_drivers": [
+        {
+          "feature": "is_month_to_month",
+          "business_name": "Month-to-Month Contract",
+          "raw_value": 0.0,
+          "shap_log_odds": -1.3839,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "monthly_charges",
+          "business_name": "Monthly Recurring Charge ($)",
+          "raw_value": 1274.23,
+          "shap_log_odds": 0.5588,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "active_seats_ratio_m0",
+          "business_name": "Current Seat Utilization Ratio",
+          "raw_value": 0.4305,
+          "shap_log_odds": 0.4152,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "ticket_max_severity_90d",
+          "business_name": "Max Support Ticket Severity (1-5)",
+          "raw_value": 0.0,
+          "shap_log_odds": -0.338,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "usage_drop_pct_m2_to_m0",
+          "business_name": "90-Day Usage Decline (%)",
+          "raw_value": 0.2579,
+          "shap_log_odds": 0.2254,
+          "direction": "Risk Enhancer (+)"
+        }
+      ],
+      "business_explanation": "Customer CUST_000004 has a predicted churn probability of 23.0% (Low Risk). Top predictive drivers: Month-to-Month Contract (0) decreases predicted churn log-odds by 1.38; Monthly Recurring Charge ($) (1274.23) increases predicted churn log-odds by 0.56; Current Seat Utilization Ratio (0.4305) increases predicted churn log-odds by 0.42. Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness.",
+      "causal_disclaimer": "Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness."
+    },
+    {
+      "customer_id": "CUST_000005",
+      "predicted_churn_prob": 0.5139,
+      "churn_risk_tier": "Medium Risk",
+      "base_log_odds": 0.0,
+      "top_drivers": [
+        {
+          "feature": "is_month_to_month",
+          "business_name": "Month-to-Month Contract",
+          "raw_value": 1.0,
+          "shap_log_odds": 0.4299,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "monthly_charges",
+          "business_name": "Monthly Recurring Charge ($)",
+          "raw_value": 32.56,
+          "shap_log_odds": -0.3745,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "active_seats_ratio_m0",
+          "business_name": "Current Seat Utilization Ratio",
+          "raw_value": 1.0,
+          "shap_log_odds": -0.1937,
+          "direction": "Protective Factor (-)"
+        },
+        {
+          "feature": "ticket_max_severity_90d",
+          "business_name": "Max Support Ticket Severity (1-5)",
+          "raw_value": 3.0,
+          "shap_log_odds": 0.1606,
+          "direction": "Risk Enhancer (+)"
+        },
+        {
+          "feature": "ticket_count_90d",
+          "business_name": "Support Tickets Opened (Last 90 Days)",
+          "raw_value": 2.0,
+          "shap_log_odds": 0.1558,
+          "direction": "Risk Enhancer (+)"
+        }
+      ],
+      "business_explanation": "Customer CUST_000005 has a predicted churn probability of 51.4% (Medium Risk). Top predictive drivers: Month-to-Month Contract (1) increases predicted churn log-odds by 0.43; Monthly Recurring Charge ($) (32.56) decreases predicted churn log-odds by 0.37; Current Seat Utilization Ratio (1.0) decreases predicted churn log-odds by 0.19. Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness.",
+      "causal_disclaimer": "Predictive vs. Causal Notice: SHAP values quantify how strongly each feature shifts the model's predicted churn risk based on observational correlations. They do NOT prove that directly changing a feature will causally prevent churn. Use the T-Learner Uplift score (estimated from randomized campaign experiments) to evaluate causal intervention effectiveness."
+    }
+  ]
+}

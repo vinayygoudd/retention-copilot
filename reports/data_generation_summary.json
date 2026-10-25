@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "n_customers": 20000,
+    "n_usage_records": 80000,
+    "n_support_tickets": 22556,
+    "prediction_cutoff_date": "2026-06-30",
+    "overall_churn_rate": 0.43115,
+    "control_churn_rate": 0.4868069967388082,
+    "treated_churn_rate": 0.40282178964840804,
+    "empirical_ate_retention": 0.08398520709040014,
+    "mean_true_uplift": 0.08956326985176168
+  },
+  "validation": {
+    "passed": true,
+    "checks_run": 22,
+    "checks_passed": 22,
+    "metrics": {
+      "n_customers": 20000,
+      "n_pre_cutoff_tickets": 22306,
+      "n_post_cutoff_tickets": 250,
+      "smd_tenure_months": 0.01333,
+      "smd_monthly_charges": 0.00592,
+      "smd_seats_licensed": 0.00477
+    }
+  }
+}

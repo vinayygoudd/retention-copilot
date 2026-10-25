@@ -1,0 +1,102 @@
+{
+  "embedding_backend": "sentence-transformers (all-MiniLM-L6-v2)",
+  "n_clusters": 5,
+  "nlp_feature_columns": [
+    "nlp_emb_0",
+    "nlp_emb_1",
+    "nlp_emb_2",
+    "nlp_emb_3",
+    "nlp_emb_4",
+    "nlp_emb_5",
+    "nlp_cluster_0_sim",
+    "nlp_cluster_1_sim",
+    "nlp_cluster_2_sim",
+    "nlp_cluster_3_sim",
+    "nlp_cluster_4_sim",
+    "nlp_theme_billing_and_pricing",
+    "nlp_theme_technical_outage_and_bugs",
+    "nlp_theme_support_responsiveness",
+    "nlp_theme_missing_features_and_ux",
+    "nlp_theme_account_and_contract_flexibility"
+  ],
+  "clusters": [
+    {
+      "cluster_id": 3,
+      "theme_code": "technical_outage_and_bugs",
+      "theme_label": "Platform Outages, API Latency & Sync Bugs",
+      "customer_count": 1581,
+      "pct_of_complaining_customers": 0.1237,
+      "avg_ticket_count": 1.72,
+      "avg_max_severity": 3.32,
+      "avg_resolution_hours": 27.57,
+      "unresolved_rate": 0.396,
+      "observed_churn_rate": 0.5478,
+      "top_keywords": "historical, mobile, web, application, crashes, whenever, loading"
+    },
+    {
+      "cluster_id": 2,
+      "theme_code": "missing_features_and_ux",
+      "theme_label": "Missing Integrations, Reporting UX & Admin Controls",
+      "customer_count": 1630,
+      "pct_of_complaining_customers": 0.1276,
+      "avg_ticket_count": 1.85,
+      "avg_max_severity": 3.38,
+      "avg_resolution_hours": 28.31,
+      "unresolved_rate": 0.4423,
+      "observed_churn_rate": 0.5472,
+      "top_keywords": "renewal, price, invoice, rate, monthly, notice, unexpected"
+    },
+    {
+      "cluster_id": 4,
+      "theme_code": "support_responsiveness",
+      "theme_label": "Slow Support SLA, Escalations & Unresolved Tickets",
+      "customer_count": 5499,
+      "pct_of_complaining_customers": 0.4304,
+      "avg_ticket_count": 1.69,
+      "avg_max_severity": 3.27,
+      "avg_resolution_hours": 27.73,
+      "unresolved_rate": 0.4093,
+      "observed_churn_rate": 0.5472,
+      "top_keywords": "specialist, missing, scheduled, support, ticket, exports, failed"
+    },
+    {
+      "cluster_id": 0,
+      "theme_code": "billing_and_pricing",
+      "theme_label": "Billing Surprises, Overage Fees & Renewal Pricing",
+      "customer_count": 2161,
+      "pct_of_complaining_customers": 0.1691,
+      "avg_ticket_count": 1.84,
+      "avg_max_severity": 3.37,
+      "avg_resolution_hours": 28.05,
+      "unresolved_rate": 0.4322,
+      "observed_churn_rate": 0.5396,
+      "top_keywords": "billing, requesting, month, monthly, api, invoice, contract"
+    },
+    {
+      "cluster_id": 1,
+      "theme_code": "account_and_contract_flexibility",
+      "theme_label": "Rigid Contract Lock-In & Seat Reduction Policies",
+      "customer_count": 1905,
+      "pct_of_complaining_customers": 0.1491,
+      "avg_ticket_count": 1.73,
+      "avg_max_severity": 3.35,
+      "avg_resolution_hours": 28.0,
+      "unresolved_rate": 0.4289,
+      "observed_churn_rate": 0.5339,
+      "top_keywords": "seat, subscription, seats, tier, team, notice, high"
+    },
+    {
+      "cluster_id": -1,
+      "theme_code": "no_complaint",
+      "theme_label": "No Pre-Cutoff Complaints",
+      "customer_count": 7224,
+      "pct_of_complaining_customers": 0.0,
+      "avg_ticket_count": 0.0,
+      "avg_max_severity": 0.0,
+      "avg_resolution_hours": 0.0,
+      "unresolved_rate": 0.0,
+      "observed_churn_rate": 0.2316,
+      "top_keywords": "none"
+    }
+  ]
+}

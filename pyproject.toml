@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retention-copilot"
+version = "1.0.0"
+description = "AI-Powered Customer Retention Platform: Churn Prediction, SHAP Explainability, NLP Complaint Intelligence, T-Learner Uplift Modeling, Financial Decision Optimization, Snowflake Warehouse Integration, and Evidence-Grounded LLM Action Briefs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Senior AI/ML Engineering Portfolio", email = "ai-engineering@example.com"}
+]
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.1.0",
+    "scipy>=1.11.0",
+    "statsmodels>=0.14.0",
+    "pyarrow>=14.0.0",
+    "PyYAML>=6.0",
+    "scikit-learn>=1.3.0",
+    "xgboost>=2.0.0",
+    "shap>=0.44.0",
+    "sentence-transformers>=2.3.0",
+    "pyspark>=3.5.0",
+    "snowflake-connector-python>=3.6.0",
+    "streamlit>=1.31.0",
+    "plotly>=5.18.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "openai>=1.12.0",
+    "python-dotenv>=1.0.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"
+pythonpath = ["."]

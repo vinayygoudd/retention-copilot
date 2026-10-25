@@ -1,0 +1,53 @@
+{
+  "cutoff_date": "2026-06-30",
+  "spark_execution": {
+    "engine": "pandas_spark_compatible_fallback",
+    "pyspark_installed": false,
+    "note": "PySpark package not installed in current container; executed identical DAG via local DataFrame engine."
+  },
+  "audit_counts": {
+    "total_customers": 20000,
+    "total_usage_rows": 80000,
+    "kept_pre_cutoff_usage_rows": 60000,
+    "dropped_post_cutoff_usage_rows": 20000,
+    "total_ticket_rows": 22556,
+    "kept_pre_cutoff_ticket_rows": 22306,
+    "dropped_post_cutoff_ticket_rows": 250
+  },
+  "feature_columns": [
+    "tenure_months",
+    "seats_licensed",
+    "monthly_charges",
+    "gross_margin_pct",
+    "auto_pay_enabled",
+    "is_month_to_month",
+    "is_one_year",
+    "is_two_year",
+    "is_tier_basic",
+    "is_tier_standard",
+    "is_tier_enterprise",
+    "is_seg_smb",
+    "is_seg_enterprise",
+    "active_seats_ratio_m0",
+    "active_seats_ratio_mean_3m",
+    "usage_drop_pct_m2_to_m0",
+    "active_days_m0",
+    "weekly_sessions_m0",
+    "feature_adoption_m0",
+    "api_calls_k_m0",
+    "late_payment_count_3m",
+    "payment_failures_3m",
+    "billing_shock_ratio",
+    "charge_per_active_seat",
+    "ticket_count_90d",
+    "ticket_max_severity_90d",
+    "ticket_unresolved_count_90d",
+    "ticket_mean_resolution_hours_90d",
+    "ticket_min_csat_90d"
+  ],
+  "split_counts": {
+    "train": 13999,
+    "val": 3000,
+    "test": 3001
+  }
+}
