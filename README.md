@@ -260,11 +260,3 @@ retention_copilot/
     └── PROJECT_COMPLETION_CHECKLIST.md           # Deliverable verification matrix
 ```
 
-## 8. Documentation & Deep-Dive Reports
-
-- **Architecture & Data Dictionary**: [docs/ARCHITECTURE\_AND\_DATA\_DICTIONARY.md](https://www.google.com/search?q=docs/ARCHITECTURE_AND_DATA_DICTIONARY.md)
-- **Methodology, Causal Assumptions & Limitations**: [docs/METHODOLOGY\_AND\_LIMITATIONS.md](https://www.google.com/search?q=docs/METHODOLOGY_AND_LIMITATIONS.md)
-- **Snowflake Cloud Warehouse Setup & FinOps Guide**: [docs/SNOWFLAKE\_SETUP\_GUIDE.md](https://www.google.com/search?q=docs/SNOWFLAKE_SETUP_GUIDE.md)
-- **Local Setup & Automated Testing Guide**: [docs/SETUP\_AND\_TESTING.md](https://www.google.com/search?q=docs/SETUP_AND_TESTING.md)
-- **Churn Model, Calibration, SHAP & NLP Report**: [reports/model\_evaluation\_report.md](https://www.google.com/search?q=reports/model_evaluation_report.md)
-- **Uplift Modeling & Campaign ROI Report**: [reports/campaign\_comparison\_report.md](https://www.google.com/search?q=reports/campaign_comparison_report.md)
